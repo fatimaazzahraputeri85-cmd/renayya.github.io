@@ -8,13 +8,16 @@
 
 /* BODY */
 body {
-  background-color: #fff1f5;
+  background: linear-gradient(180deg, #fff1f5, #ffe4ec);
   color: #374151;
 }
 
 /* NAVBAR */
 .navbar {
-  background-color: #f472b6;
+  position: sticky;
+  top: 0;
+  background: rgba(255, 182, 213, 0.85);
+  backdrop-filter: blur(10px);
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -22,15 +25,15 @@ body {
 }
 
 .navbar h1 {
-  color: #ffffff;
-  font-size: 1.4rem;
-  font-weight: 500;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #9d174d;
 }
 
 .navbar nav a {
-  color: #ffffff;
+  margin-left: 1.5rem;
   text-decoration: none;
-  margin-left: 1.2rem;
+  color: #9d174d;
   font-size: 0.95rem;
 }
 
@@ -38,25 +41,44 @@ body {
   text-decoration: underline;
 }
 
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 4rem 1.5rem 3rem;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  color: #9d174d;
+  margin-bottom: 0.8rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: auto;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
 /* CONTAINER */
 .container {
-  max-width: 960px;
-  margin: 2.5rem auto;
-  padding: 0 1.5rem;
+  max-width: 900px;
+  margin: auto;
+  padding: 0 1.5rem 2rem;
 }
 
 /* CARD */
 .card {
-  background-color: #ffffff;
-  padding: 1.8rem;
-  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 22px;
+  padding: 2rem;
   margin-bottom: 2rem;
-  box-shadow: 0 10px 25px rgba(244, 114, 182, 0.25);
+  box-shadow: 0 20px 40px rgba(236, 72, 153, 0.15);
 }
 
-.card h2 {
-  color: #db2777;
-  margin-bottom: 0.8rem;
+.card h3 {
+  color: #be185d;
+  margin-bottom: 0.6rem;
 }
 
 .card p {
@@ -67,33 +89,33 @@ body {
 /* BUTTON */
 .btn {
   display: inline-block;
-  margin-top: 1rem;
-  padding: 0.6rem 1.4rem;
-  background-color: #f472b6;
-  color: #ffffff;
+  margin-top: 1.2rem;
+  padding: 0.6rem 1.6rem;
+  background: linear-gradient(135deg, #f472b6, #ec4899);
+  color: white;
   text-decoration: none;
   border-radius: 999px;
   font-size: 0.9rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn:hover {
-  background-color: #ec4899;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(236, 72, 153, 0.4);
 }
 
 /* IMAGE */
-.gallery-img {
-  display: block;
+.image {
   width: 100%;
-  max-width: 500px;
+  max-width: 480px;
   margin-top: 1.2rem;
-  border-radius: 16px;
+  border-radius: 18px;
 }
 
 /* FOOTER */
 .footer {
   text-align: center;
-  padding: 1rem;
-  background-color: #fce7f3;
-  font-size: 0.85rem;
-  margin-top: 3rem;
+  padding: 1.5rem;
+  font-size: 0.8rem;
+  color: #9d174d;
 }
